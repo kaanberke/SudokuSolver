@@ -1,13 +1,14 @@
 # Sudoku Solver
 
-####There are 3 different parts of the project:
+## Introduction:
+#### There are 3 different parts of the project:
 * Algorithms
 * Main class
 * Gui
 
 ---
 
-####Let's inspect them..
+#### Let's inspect them..
 * Sudoku puzzles can be solved by using the algorithms below:
     * AC3
     * Backtracking
@@ -32,7 +33,7 @@ in the dataset.
 
 ---
 
-### Installation & Running
+## Installation & Running
 
 First install the requirements.
 
