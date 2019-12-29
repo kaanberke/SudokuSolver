@@ -12,7 +12,7 @@
     * AC3
     * Backtracking
 * main.py takes 2 different parameters:
-    * ```py main.pt input.txt output.txt```
+    * ```py main.py input.txt output.txt```
     * input file which provides sudoku puzzles' strings..
     * output file which provides the name of the file to write solutions in it.
 * GUI:
@@ -53,7 +53,6 @@ Then
     * ```
       exit
       ```
-<<<<<<< HEAD
       
 ## Screenshot(s)
 
