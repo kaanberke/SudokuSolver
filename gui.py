@@ -4,24 +4,24 @@ import backtracking
 import ac3
 import time
 
-input_file = open('input copy.txt', 'r')
+input_file = open('input.txt', 'r')
 lines = input_file.readlines()
 lines.insert(0, "800000000003600000070090200050007000000045700000100030001000068008500010090000400")
 
 window = pyglet.window.Window(caption='Sudoku Solver')
-icon = pyglet.resource.image('icon.png')
+icon = pyglet.resource.image('media/icon.png')
 window.set_icon(icon)
 
 w_one_fourth = window.width // 4
 h_one_third = window.height // 3
 
-start_button_texture = pyglet.resource.image('image.png')
+start_button_texture = pyglet.resource.image('media/image.png')
 start_button_sprite = pyglet.sprite.Sprite(start_button_texture,
                                            x=w_one_fourth * 3,
                                            y=h_one_third * 0.25,
                                            )
 
-reset_button_texture = pyglet.resource.image('image.png')
+reset_button_texture = pyglet.resource.image('media/image.png')
 reset_button_sprite = pyglet.sprite.Sprite(reset_button_texture,
                                            x=w_one_fourth * 3,
                                            y=h_one_third * 1.05,
@@ -193,4 +193,9 @@ def on_draw():
         glEnd()
 
 
-pyglet.app.run()
+def main():
+    pyglet.app.run()
+
+
+if __name__ == '__main__':
+    main()
