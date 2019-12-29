@@ -4,7 +4,6 @@
 * Algorithms
 * Main class
 * Gui
-
 ---
 
 ####Let's inspect them..
@@ -53,3 +52,11 @@ Then
     * ```
       exit
       ```
+      
+## Screenshot(s)
+
+#### Sudoku puzzle problem sample:
+![Screenshot1-problem](media/Screenshot1-problem.png)
+
+#### Sudoku puzzle solution sample:
+![Screenshot1-solution](media/Screenshot1-solution.png)
