@@ -6,7 +6,7 @@ import sys
 
 
 def main(input_file, output_file):
-    backtracking_time, ac3_time = [], []
+    backtracking_time, ac3_time = [0], [0]
 
     lines = input_file.readlines()[:500]
     total = len(lines)
@@ -21,7 +21,7 @@ def main(input_file, output_file):
     for line in lines:
         current = time.time()
         answer = ac3.main(line)
-        ac3_time.append(time.time() - current)
+        ac3_time.append(ac3_time[-1] + time.time() - current)
         if answer:
             result["solved"] += 1
         else:
@@ -37,7 +37,7 @@ def main(input_file, output_file):
     for line in lines:
         current = time.time()
         answer = backtracking.main(line)
-        backtracking_time.append(time.time() - current)
+        backtracking_time.append(backtracking_time[-1] + time.time() - current)
         if answer:
             result["solved"] += 1
             output_file.write(answer)
@@ -48,6 +48,8 @@ def main(input_file, output_file):
     print(f"{result['no solution']} could not solved")
     print(f"It took {time.time() - start} second(s) to solved {result['solved']} number of sudoku puzzles.")
 
+    backtracking_time.pop(0)
+    ac3_time.pop(0)
     return backtracking_time, ac3_time
 
 
